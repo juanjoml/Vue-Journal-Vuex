@@ -29,6 +29,9 @@ import { defineAsyncComponent } from "vue";
 export default {
   components: {
     Fab: defineAsyncComponent(() => import('@/modules/daybook/components/Fab.vue'))
+  },
+  created() {
+    console.log(this.$route)
   }
 }
 </script>
